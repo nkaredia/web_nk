@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Noorsil Karedia</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400,300,500' rel='stylesheet' type='text/css'>
+    <script src="Scripts/jquery-2.1.4.min.js"></script>
+    <script src="Scripts/jquery.easing.1.3.js"></script>
+    <link href="Css/indexStyle.css" rel="stylesheet" />
+    <link href="Css/LargeView.css" rel="stylesheet" />
+    <link href="Css/SmallView.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="navigation">
+        <div class="nav-header">
+            <div class="loading"><div>nk</div></div>
+            <div class="toggle-container">
+                <div class="toggle-button">
+                    <div class="t-bar-container">
+                        <div class="t-bar"></div>
+                        <div class="t-bar"></div>
+                        <div class="t-bar"></div>
+                        <div class="t-bar"></div>
+                    </div>  
+                </div>
+            </div>
+        </div>
+        <div class="nav-align">
+            <ul>
+                <li id="home-link" class="active">Home</li>
+                <li id="about-link">About</li>
+                <li id="projects-link">Projects</li>
+                <li id="contact-link">Contact</li>
+            </ul>
+        </div>
+    </div>
+    <!--Navigation Animation-->
+    <script type="text/javascript"> 
+        $(".toggle-button").click(function () {
+            $(".nav-align").slideToggle(1000,"easeInOutCirc");
+        });
+        $(window).resize(function () {
+            if ($(window).width() > 768) {
+                $(".nav-align").removeAttr('style');
+            }
+        });
+    </script><!--Navigation Animation-->
+</body>
+</html>
