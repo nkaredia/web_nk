@@ -25,6 +25,8 @@
         /*border: 1px solid red;*/
         width: 100vw;
         display:none;
+        position:absolute;
+        background-color: cadetblue;
     }
 
         .nav-align ul {
@@ -92,4 +94,31 @@
         margin-left: 10px;
         margin-top: 8px;
     }
+
+        .home-page {
+        width: 100vw;
+        height: calc(100vh - 107px);
+        overflow: hidden;
+        /*background-color: red;*/
+    }
+
+    .home-logo {
+        border: 10px solid cadetblue;
+        width: 300px;
+        height: 300px;
+        border-radius: 100%;
+        background-color: #d4dce6;
+        text-align: center;
+        font-size: 25px;
+        color: #444;
+        margin-left: calc((100vw/2) - 150px);
+        margin-top: calc((100vh/2) - 150px - 100px);
+        -webkit-box-shadow: 0px 0px 199px 34px rgba(95,158,160,0.95);
+        -moz-box-shadow: 0px 0px 199px 34px rgba(95,158,160,0.95);
+        box-shadow: 0px 0px 199px 34px rgba(95,158,160,0.95);
+    }
+
+        .home-logo div:first-child {
+            margin-top: 120px;
+        }
 }
