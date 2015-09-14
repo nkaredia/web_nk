@@ -33,26 +33,21 @@
                 <li id="home-link" class="active">Home</li>
                 <li id="about-link">About</li>
                 <li id="projects-link">Projects</li>
-                <li id="contact-link">Contact</li>
+                <li id="contact-link" onclick="scroll('#contact');">Contact</li>
             </ul>
         </div>
     </div>
-    <div class="home-page">
+    <div class="home-page" id="home">
         <div class="home-logo">
             <div>Noorsil Karedia</div>
             <div>Software Developer</div>
         </div>
     </div>
-    <!--Navigation Animation-->
-    <script type="text/javascript"> 
-        $(".toggle-button").click(function () {
-            $(".nav-align").slideToggle(300);
-        });
-        $(window).resize(function () {
-            if ($(window).width() > 768) {
-                $(".nav-align").removeAttr('style');
-            }
-        });
-    </script><!--Navigation Animation-->
+    <div class="contact-page" id="contact">
+
+    </div>
+    <script type="text/javascript" src="Scripts/body-scripts.min.js"></script> 
+    <!--<script type="text/javascript" src="Scripts/navToggle.js"></script>
+    <script type="text/javascript" src="Scripts/scroll-page-animation.js"></script>-->
 </body>
 </html>

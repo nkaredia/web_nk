@@ -3,14 +3,21 @@
         background-color: #d4dce6;
         margin: 0;
         padding: 0;
+        overflow-x: hidden;
+        background-image: url('../Resource/home-back.png');
+        background-repeat: repeat;
+        /*background-attachment: fixed;*/
+        background-position-y: 100px;
     }
 
     .navigation {
         margin: 0px;
         height: 100px;
         width: 100vw;
+        margin-top: -100px;
         background-color: cadetblue;
         overflow: auto;
+       position:fixed;
     }
 
     .nav-header {
@@ -71,9 +78,10 @@
     .home-page {
         width: 100vw;
         height: calc(100vh - 100px);
+        margin-top:100px;
         overflow: hidden;
-        background-image: url('../Resource/home-back.png');
-        background-repeat: repeat;
+        /*background-image: url('../Resource/home-back.png');*/
+        /*background-repeat: repeat;*/
     }
 
     .home-logo {
@@ -99,5 +107,12 @@
         .home-logo div:last-child{
             margin-top: 3px;
             font-size: 17.5px;
+        }
+
+        .contact-page{
+            width: 100vw;
+            height: calc(100vh - 100px);
+            overflow: hidden;
+            /*background-color:red;*/
         }
 }
