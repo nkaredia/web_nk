@@ -1,9 +1,9 @@
 {
-  "name": "someProj",
-  "version": "0.0.0",
-  "description": "",
+  "name": "web_nk",
+  "version": "1.0.0",
+  "description": "nk_website",
   "scripts": {},
-  "author": "",
+  "author": "Noorsil Karedia",
   "license": "",
   "devDependencies": {
     "gulp-minify-css": "^1.2.1",
